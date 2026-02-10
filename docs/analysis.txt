@@ -1,0 +1,27 @@
+
+ENTITIES AND ATTRIBUTES
+-----------------------
+
+1. USER
+   - id (PK) - Primary Key, Auto-increment
+   - first_name - VARCHAR
+   - last_name - VARCHAR
+   - category - Enum('admin','user')
+
+
+2. CONTACT
+   - id (PK) - Primary Key, Auto-increment
+   - full_name - VARCHAR
+   - phone - VARCHAR
+   - email - VARCHAR
+   - added_by (FK) - Foreign Key to User
+
+
+
+2. USER - CONTACT (One-to-Many)
+   - One User can add many Contacts
+   - A Contact is added by one User
+   - Relationship: USER (1) ----< CONTACT (M)
+
+
+
